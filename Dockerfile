@@ -1,15 +1,15 @@
 FROM ruby:2.6-alpine
 
 RUN apk add --update --no-cache \
-    build-base \
-    postgresql-dev \
-    sqlite-dev \
-    git \
-    file \
-    imagemagick \
-    nodejs-current \
-    yarn \
-    tzdata
+  build-base \
+  postgresql-dev \
+  sqlite-dev \
+  git \
+  file \
+  imagemagick \
+  nodejs-current \
+  yarn \
+  tzdata
 
 # Create project directory (workdir)
 WORKDIR /app
